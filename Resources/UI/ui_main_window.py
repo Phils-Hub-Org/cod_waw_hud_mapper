@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windoweRXfxo.ui'
+## Form generated from reading UI file 'main_windowUTrrax.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.2
 ##
@@ -22,7 +22,7 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QFrame,
     QMenuBar, QPlainTextEdit, QPushButton, QRadioButton,
     QSizePolicy, QSpacerItem, QStatusBar, QTabWidget,
     QToolBar, QToolButton, QVBoxLayout, QWidget)
-import Resources.resources_rc
+import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -176,6 +176,62 @@ class Ui_MainWindow(object):
 "    background: none;             /* Remove arrows */\n"
 "}\n"
 "\n"
+"/* QGroupBox */\n"
+"QGroupBox {\n"
+"    background-color: #2e2e2e;        /* Dark gray background */\n"
+"    border: 1px solid #5b5e60;        /* Light gray border */\n"
+"    border-radius: 4px;               /* Rounded corners */\n"
+"    margin-top: 0px;                 /* Space above the group box */\n"
+"    padding-top: 6px;                    /* Padding inside the group box */\n"
+"    color: #ffffff;                   /* White text for the title */\n"
+"    font-weight: bold;                /* Bold title text */\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"    subcontrol-origin: margin;\n"
+"    subcontrol-position: top center;    /* Position the "
+                        "title at the top left */\n"
+"    background-color: transparent;    /* Transparent background for the title */\n"
+"    padding: 0 0px;                   /* Padding around the title */\n"
+"    color: #ffffff;                   /* White text for the title */\n"
+"}\n"
+"\n"
+"QGroupBox::title:hover {\n"
+"    color: #4a90e2;                   /* Light blue title on hover */\n"
+"}\n"
+"\n"
+"QGroupBox:flat {\n"
+"    border: none;                     /* No border when the group box is flat */\n"
+"}\n"
+"\n"
+"QGroupBox:disabled {\n"
+"    color: #777777;                   /* Lighter gray text for disabled group box */\n"
+"    border-color: #5b5e60;            /* Keep the light gray border */\n"
+"}\n"
+"\n"
+"/* QGraphicsView */\n"
+"QGraphicsView {\n"
+"    background-color: #2e2e2e;  /* Dark gray background */\n"
+"    border: 1px solid #5b5e60;  /* Light gray border */\n"
+"    border-radius: 4px;         /* Rounded corners */\n"
+"}\n"
+"\n"
+"QGraphicsView:focus {\n"
+"    border-color: #4a90e2;      /* Light blue border when foc"
+                        "used */\n"
+"    background-color: #333333;  /* Slightly lighter gray background on focus */\n"
+"}\n"
+"\n"
+"QGraphicsView:disabled {\n"
+"    background-color: #2e2e2e;  /* Dark gray background when disabled */\n"
+"    border-color: #5b5e60;      /* Light gray border for disabled state */\n"
+"    color: #777777;             /* Lighter gray for disabled text or content */\n"
+"}\n"
+"\n"
+"QGraphicsView::viewport {\n"
+"    background-color: #2e2e2e;  /* Dark gray background for the viewport */\n"
+"}\n"
+"\n"
 "/* QLabel */\n"
 "QLabel {\n"
 "    color: #ffffff;             /* White text */\n"
@@ -195,9 +251,9 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QLineEdit:focus {\n"
-"    border-color: #4a90e2;      /* Light blue border when focused */\n"
-"    background-color: #333333;  /* Slightly lighter gray on"
-                        " focus */\n"
+""
+                        "    border-color: #4a90e2;      /* Light blue border when focused */\n"
+"    background-color: #333333;  /* Slightly lighter gray on focus */\n"
 "}\n"
 "\n"
 "/* QListWidget */\n"
@@ -220,13 +276,13 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QListWidget::item:hover {\n"
-"    background-color: #3d78b2;      /* Darker blue on hover */\n"
+"    background-color: #3d78b2;      /* Darker blue on hover "
+                        "*/\n"
 "    color: #ffffff;                 /* Ensure text remains white when hovered */\n"
 "}\n"
 "\n"
 "QListWidget::item:focus {\n"
-""
-                        "    border: 1px solid #4a90e2;      /* Light blue border on focus */\n"
+"    border: 1px solid #4a90e2;      /* Light blue border on focus */\n"
 "}\n"
 "\n"
 "/* QPlainTextEdit */\n"
@@ -247,10 +303,10 @@ class Ui_MainWindow(object):
 "\n"
 "/* QTabWidget */\n"
 "QTabWidget::pane {\n"
-"    background-color: #2e2e2e;      /* Dark gray background */\n"
+"    background-color: #2e2e2e;      /* Dark gray backgr"
+                        "ound */\n"
 "    border: 1px solid #5b5e60;      /* Light gray border around the pane */\n"
-"    padding: 4px;                   /* Pa"
-                        "dding inside the pane */\n"
+"    padding: 4px;                   /* Padding inside the pane */\n"
 "}\n"
 "\n"
 "QTabWidget::tab-bar {\n"
@@ -273,10 +329,10 @@ class Ui_MainWindow(object):
 "\n"
 "/* Selected tab */\n"
 "QTabBar::tab:selected {\n"
-"    background-color: #4a90e2;      /* Light blue background for selected tab */\n"
+"    background-color: #4a90e2;      /* "
+                        "Light blue background for selected tab */\n"
 "    color: #ffffff;                 /* White text for selected tab */\n"
-"    border-co"
-                        "lor: #4a90e2;          /* Blue border for selected tab */\n"
+"    border-color: #4a90e2;          /* Blue border for selected tab */\n"
 "}\n"
 "\n"
 "/* Hovered tab */\n"
@@ -300,13 +356,13 @@ class Ui_MainWindow(object):
 "QTabBar::close-button {\n"
 "    /* image: url(close-icon.png);     Replace with your close icon path */\n"
 "    subcontrol-position: right;     /* Position the close button on the right */\n"
-"    margin: 0 8px 0 0;              /* Spacing for the close button */\n"
+"    margin: 0 8px 0 0;              /* Spacing for the "
+                        "close button */\n"
 "}\n"
 "/*\n"
 "QTabBar::close-button:hover {\n"
 "    image: url(close-icon-hover.png);   Change icon on hover \n"
-""
-                        "}*/\n"
+"}*/\n"
 "\n"
 "/* QComboBox */\n"
 "QComboBox {\n"
@@ -330,10 +386,10 @@ class Ui_MainWindow(object):
 "QComboBox::drop-down {\n"
 "    subcontrol-origin: padding;\n"
 "    subcontrol-position: top right;\n"
-"    width: 30px;                      /* Width of the drop-down button */\n"
+"    width: 30px;                 "
+                        "     /* Width of the drop-down button */\n"
 "    background-color: #2e2e2e;        /* Dark gray background for drop-down */\n"
-"    b"
-                        "order-left: 1px solid #5b5e60;   /* Light gray separator between drop-down button and combo box */\n"
+"    border-left: 1px solid #5b5e60;   /* Light gray separator between drop-down button and combo box */\n"
 "}\n"
 "\n"
 "QComboBox::down-arrow {\n"
@@ -350,12 +406,12 @@ class Ui_MainWindow(object):
 "    background-color: #2e2e2e;        /* Dark gray background for drop-down list */\n"
 "    color: #ffffff;                   /* White text */\n"
 "    border: 1px solid #5b5e60;        /* Light gray border around the list */\n"
-"    selection-background-color: #4a90e2;  /* Light blue background for selected item */\n"
+"    selection-background-color: #4a90e2;  /* Light blue background for sel"
+                        "ected item */\n"
 "    selection-color: #ffffff;         /* White text for selected item */\n"
 "}\n"
 "\n"
-"QComboBox QAbstractItemView"
-                        "::item {\n"
+"QComboBox QAbstractItemView::item {\n"
 "    background-color: transparent;    /* Transparent background for list items */\n"
 "    padding: 6px;                     /* Padding for each item in the list */\n"
 "}\n"
@@ -376,11 +432,11 @@ class Ui_MainWindow(object):
 "    border-color: #5b5e60;            /* Keep the light gray border */\n"
 "}\n"
 "\n"
-"/* QPushButton */\n"
+"/* QPus"
+                        "hButton */\n"
 "QPushButton {\n"
 "    background-color: #3c3f41;  /* Dark gray background */\n"
-"    color: #ffffff;             /* Wh"
-                        "ite text */\n"
+"    color: #ffffff;             /* White text */\n"
 "    border: 1px solid #5b5e60;  /* Light gray border */\n"
 "    border-radius: 4px;         /* Rounded corners */\n"
 "	padding: 0px 0px;\n"
@@ -405,10 +461,10 @@ class Ui_MainWindow(object):
 "QCheckBox::indicator {\n"
 "    width: 14px;                    /* Set the size of the checkbox */\n"
 "    height: 14px;\n"
-"    background-color: #2e2e2e;      /* Dark gray background for the checkbox */\n"
+"    background-color: #2e2e2e;      /* Dark gray background for th"
+                        "e checkbox */\n"
 "    border: 1px solid #5b5e60;      /* Light gray border */\n"
-"    border-radius: 2px;             /* Slight round"
-                        "ing for modern look */\n"
+"    border-radius: 2px;             /* Slight rounding for modern look */\n"
 "}\n"
 "\n"
 "/* Hovered checkbox */\n"
@@ -428,13 +484,13 @@ class Ui_MainWindow(object):
 "QCheckBox::indicator:indeterminate {\n"
 "    background-color: #4a90e2;      /* Light blue when in indeterminate state */\n"
 "    border-color: #3d78b2;          /* Darker blue border */\n"
-"    image: url(:/indeterminate-icon.png); /* Replace with your indeterminate icon */\n"
+"    image: url(:/indeterminate-icon.png); /* Replace with your indeterminate icon "
+                        "*/\n"
 "}\n"
 "\n"
 "/* Pressed checkbox */\n"
 "QCheckBox::indicator:pressed {\n"
-"    background-color: #3d78b2;      /* Darker blue on"
-                        " press */\n"
+"    background-color: #3d78b2;      /* Darker blue on press */\n"
 "    border-color: #2a5f92;          /* Even darker border when pressed */\n"
 "}\n"
 "\n"
@@ -456,13 +512,13 @@ class Ui_MainWindow(object):
 "    height: 14px;\n"
 "    background-color: #2e2e2e;   /* Dark gray background for the indicator */\n"
 "    border: 1px solid #5b5e60;   /* Light gray border */\n"
-"    border-radius: 8px;          /* Circular radio button */\n"
+"    border-radius: 8px;          /* Circular radio bu"
+                        "tton */\n"
 "}\n"
 "\n"
 "QRadioButton::indicator:hover {\n"
 "    background-color: #4a90e2;   /* Light blue on hover */\n"
-"    border-"
-                        "color: #3d78b2;       /* Darker blue border on hover */\n"
+"    border-color: #3d78b2;       /* Darker blue border on hover */\n"
 "}\n"
 "\n"
 "QRadioButton::indicator:checked {\n"
@@ -484,10 +540,10 @@ class Ui_MainWindow(object):
 "QToolButton {\n"
 "    background-color: #3c3f41;    /* Dark gray background */\n"
 "    color: #ffffff;               /* White text/icon */\n"
-"    border: 1px solid #5b5e60;    /* Light gray border */\n"
+"    border: 1px solid #5b5e60;    /* Light gray border */"
+                        "\n"
 "    border-radius: 4px;           /* Rounded corners */\n"
-"    padding: 0px 0px;            /* Padding for comfortable button s"
-                        "ize */\n"
+"    padding: 0px 0px;            /* Padding for comfortable button size */\n"
 "}\n"
 "\n"
 "QToolButton:hover {\n"
@@ -512,10 +568,10 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "/* QToolButton::menu-button */\n"
-"QToolButton::menu-button {\n"
+"QToolButt"
+                        "on::menu-button {\n"
 "    background-color: #3c3f41;      /* Dark gray background for menu button */\n"
-"    border: 1px solid #5b5e6"
-                        "0;      /* Light gray border for menu button */\n"
+"    border: 1px solid #5b5e60;      /* Light gray border for menu button */\n"
 "    padding: 4px;                   /* Padding for the menu button */\n"
 "}\n"
 "\n"
@@ -532,8 +588,7 @@ class Ui_MainWindow(object):
         self.actionAbout.setObjectName(u"actionAbout")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.centralwidget.setStyleSheet(u"/* Central Widget */\n"
-"#centralwidget {\n"
+        self.centralwidget.setStyleSheet(u"#centralwidget {\n"
 "    background-color: #1e1e1e;  /* Dark gray background */\n"
 "}")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -1116,28 +1171,12 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout.addWidget(self.frame_10)
 
-        self.frame = QFrame(self.frame_3)
-        self.frame.setObjectName(u"frame")
-        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
-        sizePolicy3.setHorizontalStretch(0)
-        sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
-        self.frame.setSizePolicy(sizePolicy3)
-        self.frame.setStyleSheet(u"QFrame {\n"
-"    background-color: #2e2e2e;\n"
-"	margin: 0px;\n"
-"}")
-        self.frame.setFrameShape(QFrame.Shape.NoFrame)
-        self.frame.setFrameShadow(QFrame.Shadow.Raised)
-        self.verticalLayout_5 = QVBoxLayout(self.frame)
-        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-        self.graphicsView = QGraphicsView(self.frame)
+        self.graphicsView = QGraphicsView(self.frame_3)
         self.graphicsView.setObjectName(u"graphicsView")
+        self.graphicsView.setStyleSheet(u"QFrame {margin: 0px;}")
+        self.graphicsView.setFrameShape(QFrame.Shape.NoFrame)
 
-        self.verticalLayout_5.addWidget(self.graphicsView)
-
-
-        self.horizontalLayout.addWidget(self.frame)
+        self.horizontalLayout.addWidget(self.graphicsView)
 
         self.frame_6 = QFrame(self.frame_3)
         self.frame_6.setObjectName(u"frame_6")
@@ -1321,7 +1360,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.label_6)
 
-        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        self.horizontalSpacer_2 = QSpacerItem(16, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout_6.addItem(self.horizontalSpacer_2)
 
@@ -1351,7 +1390,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.label_7)
 
-        self.horizontalSpacer = QSpacerItem(36, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+        self.horizontalSpacer = QSpacerItem(16, 20, QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout_5.addItem(self.horizontalSpacer)
 

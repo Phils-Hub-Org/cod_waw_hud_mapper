@@ -161,6 +161,60 @@ QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
     background: none;             /* Remove arrows */
 }
 
+/* QGroupBox */
+QGroupBox {
+    background-color: #2e2e2e;        /* Dark gray background */
+    border: 1px solid #5b5e60;        /* Light gray border */
+    border-radius: 4px;               /* Rounded corners */
+    margin-top: 0px;                 /* Space above the group box */
+    padding-top: 6px;                    /* Padding inside the group box */
+    color: #ffffff;                   /* White text for the title */
+    font-weight: bold;                /* Bold title text */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;    /* Position the title at the top left */
+    background-color: transparent;    /* Transparent background for the title */
+    padding: 0 0px;                   /* Padding around the title */
+    color: #ffffff;                   /* White text for the title */
+}
+
+QGroupBox::title:hover {
+    color: #4a90e2;                   /* Light blue title on hover */
+}
+
+QGroupBox:flat {
+    border: none;                     /* No border when the group box is flat */
+}
+
+QGroupBox:disabled {
+    color: #777777;                   /* Lighter gray text for disabled group box */
+    border-color: #5b5e60;            /* Keep the light gray border */
+}
+
+/* QGraphicsView */
+QGraphicsView {
+    background-color: #2e2e2e;  /* Dark gray background */
+    border: 1px solid #5b5e60;  /* Light gray border */
+    border-radius: 4px;         /* Rounded corners */
+}
+
+QGraphicsView:focus {
+    border-color: #4a90e2;      /* Light blue border when focused */
+    background-color: #333333;  /* Slightly lighter gray background on focus */
+}
+
+QGraphicsView:disabled {
+    background-color: #2e2e2e;  /* Dark gray background when disabled */
+    border-color: #5b5e60;      /* Light gray border for disabled state */
+    color: #777777;             /* Lighter gray for disabled text or content */
+}
+
+QGraphicsView::viewport {
+    background-color: #2e2e2e;  /* Dark gray background for the viewport */
+}
+
 /* QLabel */
 QLabel {
     color: #ffffff;             /* White text */
@@ -503,8 +557,7 @@ QToolButton::menu-button:pressed {
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">/* Central Widget */
-#centralwidget {
+    <string notr="true">#centralwidget {
     background-color: #1e1e1e;  /* Dark gray background */
 }</string>
    </property>
@@ -1777,30 +1830,13 @@ QToolButton::menu-button:pressed {
         </widget>
        </item>
        <item>
-        <widget class="QFrame" name="frame">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
+        <widget class="QGraphicsView" name="graphicsView">
          <property name="styleSheet">
-          <string notr="true">QFrame {
-    background-color: #2e2e2e;
-	margin: 0px;
-}</string>
+          <string notr="true">QFrame {margin: 0px;}</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::Shape::NoFrame</enum>
          </property>
-         <property name="frameShadow">
-          <enum>QFrame::Shadow::Raised</enum>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_5">
-          <item>
-           <widget class="QGraphicsView" name="graphicsView"/>
-          </item>
-         </layout>
         </widget>
        </item>
        <item>
@@ -2176,9 +2212,12 @@ QToolButton::menu-button:pressed {
                       <property name="orientation">
                        <enum>Qt::Orientation::Horizontal</enum>
                       </property>
+                      <property name="sizeType">
+                       <enum>QSizePolicy::Policy::Fixed</enum>
+                      </property>
                       <property name="sizeHint" stdset="0">
                        <size>
-                        <width>40</width>
+                        <width>16</width>
                         <height>20</height>
                        </size>
                       </property>
@@ -2245,7 +2284,7 @@ QToolButton::menu-button:pressed {
                       </property>
                       <property name="sizeHint" stdset="0">
                        <size>
-                        <width>36</width>
+                        <width>16</width>
                         <height>20</height>
                        </size>
                       </property>
